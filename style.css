@@ -1,0 +1,235 @@
+/* style.css - Brew Haven Coffee Shop */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fcf7f0;
+  color: #3e2c1b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #6f4e37 ;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #b87c4b ;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #4b3621 ;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #b87c4b ;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b87c4b;
+}
+
+/* Buttons */
+.btn-coffee {
+  background-color: #6f4e37;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-coffee:hover {
+  background-color: #8b6348;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(111, 78, 55, 0.3);
+}
+
+.btn-outline-coffee {
+  background-color: transparent;
+  color: #6f4e37;
+  border: 2px solid #6f4e37;
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-coffee:hover {
+  background-color: #6f4e37;
+  color: white;
+}
+
+/* Page headers */
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./media/img2.avif') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-header .lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Cards and menu items */
+.card, .menu-card {
+  border: none;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.card:hover, .menu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(111, 78, 55, 0.15);
+}
+
+.menu-img {
+  height: 100px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #5a3e2b;
+  border-left: 6px solid #b87c4b;
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+
+/* Gallery images */
+.gallery-img {
+  border-radius: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-img:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(111, 78, 55, 0.3);
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #6f4e37;
+}
+
+/* Form styling */
+.reserve-box, .contact-box {
+  background: #fff6eb;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-control, .form-select {
+  border: 1px solid #e0c9b1;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: white;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #b87c4b;
+  box-shadow: 0 0 0 0.2rem rgba(184, 124, 75, 0.25);
+}
+
+/* Footer */
+footer {
+  background: #2f1e0e;
+  color: #e6d5b8;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #e6d5b8;
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  color: #cfa26b;
+  transform: translateY(-3px);
+}
+
+/* Hero section for home */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/cafe.avif') center/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(196, 190, 190, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section h1 {
+    font-size: 2.8rem;
+  }
+  .reserve-box, .contact-box {
+    padding: 20px;
+  }
+  .gallery-img {
+    height: 200px;
+  }
+}

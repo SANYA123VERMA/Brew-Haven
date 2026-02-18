@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light py-3 border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-mug-hot me-2" style="color: #b87c4b;"></i>Brew Haven</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <h1>Our Menu</h1>
+      <p class="lead">Crafted with love, sourced with care</p>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <h3 class="section-title">Coffee & Espresso</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/Espresso.jpg" class="menu-img" alt="Espresso">
+          <div class="card-body">
+            <h5>Espresso <span class="badge bg-warning text-dark float-end">$3.50</span></h5>
+            <p class="text-muted">Single-origin, rich & bold</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Espresso">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/latte.jpg" class="menu-img" alt="Latte">
+          <div class="card-body">
+            <h5>Hazelnut Latte <span class="badge bg-warning text-dark float-end">$4.75</span></h5>
+            <p class="text-muted">Espresso, steamed milk, hazelnut</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Latte">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/cold brew.jpg" class="menu-img" alt="Cold Brew">
+          <div class="card-body">
+            <h5>Cold Brew Tonic <span class="badge bg-warning text-dark float-end">$5.25</span></h5>
+            <p class="text-muted">Nitro cold brew with lemon tonic</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Cold Brew">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/mocha.jpg" class="menu-img" alt="Mocha">
+          <div class="card-body">
+            <h5>Dark Mocha <span class="badge bg-warning text-dark float-end">$5.00</span></h5>
+            <p class="text-muted">70% dark chocolate, espresso</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Mocha">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/pour over.webp" class="menu-img" alt="Pour Over">
+          <div class="card-body">
+            <h5>Pour Over <span class="badge bg-warning text-dark float-end">$4.50</span></h5>
+            <p class="text-muted">Hand-brewed, rotating single origin</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Pour Over">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/Cappuccino.jpg" class="menu-img" alt="Cappuccino">
+          <div class="card-body">
+            <h5>Cappuccino <span class="badge bg-warning text-dark float-end">$4.25</span></h5>
+            <p class="text-muted">Perfect foam, classic Italian</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Cappuccino">Add to order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-title">Fresh Pastries</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/Croissant.jpg" class="menu-img" alt="Croissant">
+          <div class="card-body">
+            <h5>Butter Croissant <span class="badge bg-warning text-dark float-end">$3.20</span></h5>
+            <p class="text-muted">Flaky, all-butter French pastry</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Croissant">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/Avocado Toast.jpg" class="menu-img" alt="Avocado Toast">
+          <div class="card-body">
+            <h5>Avocado Toast <span class="badge bg-warning text-dark float-end">$7.50</span></h5>
+            <p class="text-muted">Sourdough, avocado, chili flakes</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Avocado Toast">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <img src="./media/roll.jpg" class="menu-img" alt="Cinnamon Roll">
+          <div class="card-body">
+            <h5>Cinnamon Roll <span class="badge bg-warning text-dark float-end">$4.50</span></h5>
+            <p class="text-muted">House-made with cream cheese icing</p>
+            <button class="btn btn-sm btn-outline-coffee order-btn" data-item="Cinnamon Roll">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container text-center">
+    <a class="navbar-brand text-white-50 mb-3 d-inline-block" href="index.html"><i class="fas fa-mug-hot me-2"></i>Brew Haven</a>
+    <p class="mb-2">Open daily 7am – 10pm</p>
+    <p><i class="fas fa-copyright me-1"></i>2025 Brew Haven Coffee</p>
+    <div>
+      <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

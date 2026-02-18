@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Haven - Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light py-3 border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-mug-hot me-2" style="color: #b87c4b;"></i>Brew Haven</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="lead">We'd love to hear from you</p>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <div class="contact-box h-100">
+          <h3 class="mb-4"><i class="fas fa-map-pin me-2" style="color: #b87c4b;"></i>Visit Us</h3>
+          <p class="mb-3"><i class="fas fa-location-dot me-2"></i> 123 Bean Street, Coffeeville, CA 90210</p>
+          <p class="mb-3"><i class="fas fa-phone-alt me-2"></i> +1 (555) 487-3923</p>
+          <p class="mb-3"><i class="fas fa-envelope me-2"></i> hello@brewhaven.com</p>
+          
+          <h4 class="mt-4 mb-3">Hours</h4>
+          <p>Monday - Friday: 7am - 9pm</p>
+          <p>Saturday - Sunday: 8am - 10pm</p>
+          
+          <h4 class="mt-4 mb-3">Follow Us</h4>
+          <div>
+            <a href="#" class="btn btn-outline-coffee me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn btn-outline-coffee me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-outline-coffee"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-7">
+        <div class="contact-box">
+          <h3 class="mb-4">Send a Message</h3>
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Your Name *</label>
+                <input type="text" class="form-control" id="contactName" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Your Email *</label>
+                <input type="email" class="form-control" id="contactEmail" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" id="contactSubject">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message *</label>
+              <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-coffee">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container text-center">
+    <a class="navbar-brand text-white-50 mb-3 d-inline-block" href="index.html"><i class="fas fa-mug-hot me-2"></i>Brew Haven</a>
+    <p class="mb-2">Open daily 7am – 10pm</p>
+    <p><i class="fas fa-copyright me-1"></i>2025 Brew Haven Coffee</p>
+    <div>
+      <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="footer-icon"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
